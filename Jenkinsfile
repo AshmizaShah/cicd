@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the repository from GitHub using SSH credentials
-                git credentialsId: 'cicd', url: 'git@github.com:AshmizaShah/test.git', branch: 'main'
+                git credentialsId: 'cicd', url: 'git@github.com:AshmizaShah/cicd.git', branch: 'main'
             }
         }
         stage('Build') {
